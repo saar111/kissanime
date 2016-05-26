@@ -1,0 +1,8 @@
+﻿::-webkit-scrollbar {
+    display: none;
+}
+
+
+.rating {
+	unicode-bidi: bidi-override;
+}

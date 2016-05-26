@@ -1,0 +1,53 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+  "name": "Kissanime",
+  "short_name": "Kissanime",
+  "description": "Kissanime complete rework",
+  "author": "Saar Ofek",
+  "version": "1.0.4.3",
+  "icons": {
+    "128": "images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://kissanime.to/Anime/*/*", "*://kissanime.org/Anime/*/*", "*://kissanime.com/Anime/*/*", "*://kissanime.net/Anime/*/*", "*://kissanime.fi/Anime/*/*"],
+      "run_at": "document_start",
+      "js": [
+        "scripts/js/utility_scripts/utility-library.js",
+        "scripts/js/utility_scripts/jquery.js",
+        "scripts/js/utility_scripts/anime-list-auth.js",
+        "scripts/js/utility_scripts/get-video.js",
+        "scripts/js/utility_scripts/fillers.js",
+        "scripts/js/page-controller.js"
+      ],
+      "css": ["css/page_controller.css"]
+    }
+  ],
+  "browser_action": {
+    "default_locale": "en",
+    "default_icon": "images/icon.png",
+    "default_popup": "html/animes.html"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "http://*/",
+    "https://*/",
+    "storage"
+  ],
+  "web_accessible_resources": [
+    "/images/Mouse-Pointer.png",
+    "/images/skip-forward.png",
+    "/images/skip-backward.png",
+    "/images/xButton.svg",
+    "/images/play.svg",
+    "/images/pause.svg",
+    "/images/volume.svg",
+    "/images/fullscreen.svg",
+    "/images/progress-bar-indicator.png"
+  ]
+}
+
+

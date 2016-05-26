@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en" style="">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/animes.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+    <script src="../scripts/js/utility_scripts/jquery.js"></script>
+    <script src="../scripts/js/utility_scripts/tooltip.js"></script>
+    <script src="../scripts/js/utility_scripts/show-info-manager.js"></script>
+    <script src="../scripts/js/utility_scripts/get-image-url.js"></script>
+    <script src="../scripts/js/utility_scripts/circular-animation.js"></script>
+    <script src="../scripts/js/animes.js"></script>
+</head>
+<body>
+<div class="container" id="content">
+    <div class="row pointer" id="on">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8" id="on-text">On</div>
+        <div class="col-xs-2 a hover-tooltip" data-tooltip-placing-y="below-element"
+             data-tooltip="-&nbsp;Settings,-&nbsp;Help,-&nbsp;Shortcuts"
+             data-create-url="../html/settings.html" id="settings">
+            <img src="../images/icon.png" width="28" id="settings-img">
+        </div>
+    </div>
+    <div id="rows">
+
+    </div>
+
+    <div id="new-button" class="row a row-button hover-tooltip pointer"
+         data-tooltip-placing-y="above-element" data-tooltip="Create New Anime"
+         data-create-url="../html/edit_anime.html">New show
+    </div>
+</div>
+
+<div class="" id="tooltip"></div>
+</body>
+</html>
