@@ -1,0 +1,229 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    font-family: 'Roboto';
+
+    max-height: 588px;
+    position: relative;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    width: 500px;
+}
+
+.page-link {
+    font-family: 'Droid';
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20pt;
+    color: #777777;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+#shortcuts:hover {
+    background-color: #eaeaea;
+}
+
+#top-row:hover {
+    background-color: #eaeaea;
+}
+
+.spoiler {
+    height: 0;
+    transition: 0.3s;
+}
+
+.row {
+    margin: 0;
+}
+
+.spoiler-controller {
+    cursor: pointer;
+}
+
+#back {
+    float: right;
+    line-height: 42px;
+    width: 0;
+}
+
+#back-img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 0px;
+    top: 7px;
+    transition: 0.3s;
+    vertical-align: top;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+#top-row {
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#help {
+
+}
+
+#help:hover {
+    color: #555555;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none !important;
+
+}
+
+.border-top {
+    border-top: 1px solid #bbbbbb;
+}
+
+.auth {
+    overflow-y: hidden;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20pt;
+    color: #777777;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+#hummingbird {
+    background-color: rgb(47, 52, 59);
+    color: #f5f5f5;
+    font-family: Mallanna;
+}
+
+#my-anime-list {
+    background-color: #697EBF;
+    color: #f5f5f5;
+    font-family: Mallanna;
+}
+
+#shortcuts {
+    box-shadow: rgb(47, 52, 59) 0px 2px 7px 0px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.cred {
+    line-height: normal;
+    font-size: 14pt;
+    text-align: center;
+    color: orange;
+    background-color: white;
+    transition: 0.3s;
+}
+
+#listing {
+    position: relative;
+    padding: 0 0 5px 10px;
+    font-size: 25pt;
+    border-bottom: 2px solid #777777;
+    box-shadow: rgb(105, 126, 191) 0px -3px 9px 0px;
+}
+
+#auth-mal {
+}
+
+.reveal-auth {
+    overflow: hidden;
+    transition: 0.2s;
+    height: 60px;
+}
+
+#settings-div {
+    font-family: Mallanna;
+    font-size: 19pt;
+}
+
+.setting {
+    height: 42px;
+    line-height: 42px;
+    box-shadow: 2px 2px 7px black;
+    padding-left: 14px;
+    cursor: pointer;
+}
+
+.setting[data-state=on]:nth-child(even) {
+    background-color: rgb(152, 208, 152);
+    font-weight: bold;
+}
+
+.setting:last-child {
+    box-shadow: -1px -1px 3px rgba(4, 4, 4, 0.5);
+
+}
+
+.setting[data-state=off]:nth-child(even) {
+    background-color: rgb(190, 16, 39);
+    font-weight: bold;
+}
+
+[data-state=on] {
+    background-color: rgb(50, 205, 50);
+}
+
+[data-state=off] {
+    background-color: rgb(224, 47, 47);
+    color: wheat;
+}
+
+.setting-text {
+    display: inline-block;
+}
+
+.recommendation {
+    float: right;
+    line-height: 60px;
+    font-size: 10pt;
+    display: inline-block;
+    padding-right: 5px;
+    position: absolute;
+    right: 0;
+    height: 35px;
+}
+
+[data-state=on] .recommendation {
+    color: darkgreen;
+}
+
+[data-state=off] .recommendation {
+    color: burlywood;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
